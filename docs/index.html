@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+
+    <title>HellaSus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+          integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-spy="scroll" data-target="#navbarCollapse" data-offset="200">
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">HellaSus</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#leaderboard">Leaderboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#authors">Authors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main role="main" class="container">
+    <div class="jumbotron">
+        <h1><span class="swagtitleemph">HellaSus</span>: Can a Machine <i>Really</i> Finish Your Sad, Desperate Yearning? ❤️</h1>
+        <a class="btn btn-lg btn-info" href="https://simple.wikipedia.org/wiki/Paper" target="_blank" role="button">Paper »</a>
+        <a class="btn btn-lg btn-secondary" href="https://github.com/jeffistyping/hellasus" target="_blank" role="button">Code &raquo;</a>
+        <a class="btn btn-lg btn-primary" href="https://github.com/jeffistyping/hellasus/tree/main/data" target="_blank" role="button">Dataset
+            &raquo;</a>
+    </div>
+
+    <div class="row" id="exampless">
+        <div class="col-md-12">
+            <h4>Pick the best ending to the pickup line.</h4>
+            <p>I think I'm a transformer...</p>
+        </div>
+        <div class="col-md-12">
+            <div class="btn-group answergroup" id="g0">
+                <button type="button" class="btn btn-sm btn-outline-secondary answerbutton" id="d1-0">a) which is a passive component that transfers electrical energy from one electrical circuit to another circuit, or multiple circuits.</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary answerbutton" id="d0-0">b) Transformers are living, human-like robots with the unique ability to turn into vehicles or beasts.</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary answerbutton" id="gold-0">c) because your attention is all I need.</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary answerbutton" id="d2-0">d) A varying current in any one coil of the transformer produces a varying magnetic flux in the transformer's core, which induces a varying electromotive force across any other coils wound around the same core.
+                </button>∏
+            </div>
+            <p class="msg"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="anchor-target" style="margin-top: 1rem;"><h2>Announcing <span
+            class="swagemph">HellaSus</span>, a new dataset for commonsense NLI.</h2>
+        <p>Questions like the above are trivial to humans, with over 95% accuracy, but current state-of-the-art NLP models built on pretraining struggle with under 48% accuracy. We achieved this through RLF (Real Life Flirting), a data collection paradigm where we stood inside a university pub for ten days, ate nothing but bar snacks, and wrote down every single pickup line we overheard.<small>*</small> The key insight is to simultaneously shift the wit and stupidity of the dataset examples towards a critical “Goldilocks” zone wherein an eavesdropping scientist named Goldilocks would definitely roll their eyes, yet the examples would be often misclassified by state-of-the-art models.</p>
+
+        <p>Our construction of <span class="swagemph">HellaSus</span>, and its resulting difficulty, sheds light on the inner workings of deep pretrained models. More broadly, it suggests a new path forward for NLP research, in which new benchmarks are made by bored researchers interested in AI for social <i>meh</i>.
+
+            <br><br><small>* We did not do this.</small>
+        </p>
+        <div class="col-lg-12">
+            <div id="leaderboard" class="anchor-target">
+                <h2>HellaSus Leaderboard</h2>
+                <p>To benchmark approaches to <span class="swagemph">HellaSus</span>, we have a leaderboard for
+                    the test set. Submission is easy! Just follow <a
+                            href="https://github.com/rowanz/HellaSus/tree/master/docs/plsdont.md" target="_blank">the
+                        instructions on our github page.</a>
+
+                <table class="table performanceTable box-shadow">
+                    <tbody class="hellasus-table">
+                        <tr>
+                            <th>Rank</th>
+                            <th style="min-width: 25%;">Model</th>
+                            <th style="max-width: 10%;">Overall accuracy</th>
+                            <th style="max-width: 10%;">In-domain category accuracy</th>
+                            <th style="max-width: 10%;">Zero-shot category accuracy</th>
+                            <!-- <th style="max-width: 10%;">ActivityNet accuracy</th>
+                            <th style="max-width: 10%;">WikiHow accuracy</th> -->
+                        </tr>
+                        <tr class="human-row">
+                            <td></td>
+                            <td>Human Performance<p class="institution"></p></td>
+                            <td>95.6</td>
+                            <td>95.6</td>
+                            <td>95.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="authors" class="anchor-target">
+            <h2>Authors</h2>
+            <div class="row justify-content-center" style="margin: 0 auto;">
+                <div class="card headshot box-shadow">
+                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/1442943593103069184/B4rdIQuX_400x400.jpg">
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center;"><a href="https://twitter.com/jeffistyping" target="_blank">Jeff</a></p>
+                    </div>
+                </div>
+                <div class="card headshot box-shadow">
+                    <img class="card-img-top" src="https://pbs.twimg.com/profile_images/1395200243239641089/TpNMlepH_400x400.jpg">
+                    <div class="card-body">
+                        <p class="card-text" style="text-align: center;"><a href="https://twitter.com/mathemakitten" target="_blank">Helen</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="anchor-target">
+            <h2>Contact</h2>
+            <p>Questions about the dataset, or want to get in touch? Contact jeff at <a href="https://twitter.com/jeffistyping" target="_blank">my contact page</a>, or open up a pull request or issue on <a
+                    href="https://github.com/jeffistyping" target="_blank">Github</a>.</p>
+        </div>
+    </div>
+
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="script.js"></script>
+</body>
+</html>
